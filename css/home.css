@@ -1,0 +1,49 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+.lesson-list {
+  display: none;
+}
+.show-lessons .lesson-list {
+  display: block;
+}
+.lesson-card ul {
+  font-size: 0.85rem;
+  line-height: 1.4rem;
+}
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #319795;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: none;
+  z-index: 50;
+}
+.whatsapp-float {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  z-index: 40;
+}
+.whatsapp-float a {
+  display: flex;
+  align-items: center;
+  background-color: #25d366;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 9999px;
+  font-weight: 600;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+}
+.whatsapp-float a img {
+  width: 24px;
+  margin-right: 8px;
+}
+

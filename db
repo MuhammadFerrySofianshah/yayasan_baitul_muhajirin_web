@@ -1,0 +1,10 @@
+CREATE TABLE pendaftar (
+  id_pendaftar INT AUTO_INCREMENT PRIMARY KEY,
+  nama VARCHAR(100),
+  nope VARCHAR(20),
+  tglLahir DATE,
+  password VARCHAR(255),
+  status ENUM('pending', 'diterima', 'ditolak') DEFAULT 'pending',
+  bukti_byPendaftar TEXT,
+  waktu_pendaftaran_akun TIMESTAMP DEFAULT CURRENT_TIMESTAMP  
+);

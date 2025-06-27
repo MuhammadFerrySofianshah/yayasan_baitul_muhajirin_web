@@ -1,0 +1,13 @@
+di bagian ID:
+opsi 1 : pada bagian tb 'siswa' ketika user mengisi formulir, 'id_pendaftar' akan masuk sesuai urutan dari pengisian fomulir dan id_admin sudah default code '1'.
+Misalnya kamu lagi proses dari form frontend ke PHP/Controller. Maka di bagian backend, insert ke tabel siswa harus mencantumkan:
+id_pendaftar diambil dari user yang sedang login/submit.
+id_admin di-set default 1.
+
+opsi 2 : menggunakan nope. jadi ketika user isi formulir otomatis urutan id_siswa akan mengikuti sesuai dengan id_pendaftar.
+
+12/06
+Buatkan tampilan data user terhubung ke DB
+
+13/06
+Test bagian pengisian fomulir user, takutnya gagal

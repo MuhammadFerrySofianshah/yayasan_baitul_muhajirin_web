@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hasil Pendaftaran</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 min-h-screen flex items-center justify-center">
+    <div class="bg-white p-6 rounded-lg shadow-lg max-w-lg w-full">
+      <h1 class="text-2xl font-bold text-teal-600 mb-4 text-center">
+        Hasil Pendaftaran
+      </h1>
+      <div class="space-y-3">
+        <div><strong>Nama:</strong> <span id="hasilNama"></span></div>
+        <div><strong>No HP:</strong> <span id="hasilNope"></span></div>
+        <div>
+          <strong>Tanggal Lahir:</strong> <span id="hasilTglLahir"></span>
+        </div>
+        <div><strong>Password:</strong> <span id="hasilPassword"></span></div>
+      </div>
+      <div class="mt-6 text-center">
+        <a
+          href="index.html"
+          class="text-white bg-teal-600 hover:bg-teal-700 px-4 py-2 rounded transition"
+          >Kembali ke Beranda</a
+        >
+      </div>
+    </div>
+
+    <script>
+      // Ambil data dari localStorage
+      const data = JSON.parse(localStorage.getItem("hasilPendaftaran"));
+
+      // Tampilkan ke HTML
+      if (data) {
+        document.getElementById("hasilNama").textContent = data.nama;
+        document.getElementById("hasilNope").textContent = data.nope;
+        document.getElementById("hasilTglLahir").textContent = data.tglLahir;
+        document.getElementById("hasilPassword").textContent = data.password;
+      } else {
+        document.body.innerHTML =
+          "<div class='text-center text-red-500'>Data tidak ditemukan. Silakan daftar ulang.</div>";
+      }
+    </script>
+  </body>
+</html>
